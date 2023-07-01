@@ -1,0 +1,6 @@
+
+<ul class="menu">
+  <li class="nav-item" *ngFor="let m of (menus$ | async)">
+     <a class="nav-link" routerLink="home/{{m?.path}}" routerLinkActive="active">{{m?.title}}</a>
+  </li>
+</ul><router-outlet></router-outlet>
